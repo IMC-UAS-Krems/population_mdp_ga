@@ -1,0 +1,76 @@
+{
+  "config": {
+    "problem": "onemax",
+    "n": 20,
+    "mu": 16,
+    "generations": 100,
+    "train_runs": 10000,
+    "validation_runs": 2000,
+    "test_runs": 10000,
+    "tournament_k": 2,
+    "crossover_rate": 0.9,
+    "mutation_rate": null,
+    "jump_k": 4,
+    "trap_k": 4,
+    "nk_k": 3,
+    "seed": 20260818,
+    "candidate_bins": [
+      4,
+      6,
+      8,
+      10
+    ],
+    "smoothing": 0.0,
+    "output_prefix": "aggregate_onemax",
+    "effective_mutation_rate": 0.05
+  },
+  "descriptor_selection": {
+    "fitness": {
+      "features": [
+        "best",
+        "mean"
+      ],
+      "selected_bins": 10,
+      "validation_score": 0.9586877630302169,
+      "aggregate_states": 24,
+      "initial_unknown_rate": 0.6079
+    },
+    "fitness_var": {
+      "features": [
+        "best",
+        "mean",
+        "variance"
+      ],
+      "selected_bins": 4,
+      "validation_score": 1.0936111700502622,
+      "aggregate_states": 11,
+      "initial_unknown_rate": 0.0838
+    },
+    "fitness_diversity": {
+      "features": [
+        "best",
+        "mean",
+        "variance",
+        "diversity"
+      ],
+      "selected_bins": 6,
+      "validation_score": 0.9166656095698598,
+      "aggregate_states": 22,
+      "initial_unknown_rate": 0.278
+    },
+    "crossover_sensitive": {
+      "features": [
+        "best",
+        "mean",
+        "variance",
+        "diversity",
+        "allele_entropy",
+        "selected_parent_distance"
+      ],
+      "selected_bins": 8,
+      "validation_score": 0.6700567747538252,
+      "aggregate_states": 44,
+      "initial_unknown_rate": 0.278
+    }
+  }
+}
