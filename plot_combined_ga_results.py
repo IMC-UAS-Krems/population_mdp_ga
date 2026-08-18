@@ -211,7 +211,7 @@ def plot_combined(
     ax.set_xlabel("Generation")
     ax.set_ylabel("Expected best fitness")
     ax.set_title(title)
-    ax.legend(loc="best", frameon=True, fontsize=9)
+    ax.legend(loc="lower right", frameon=True, fontsize=9) # place the legend in the bottom right corner
     ax.grid(alpha=0.25)
     fig.tight_layout()
     fig.savefig(output_prefix.with_suffix(".png"), dpi=300, bbox_inches="tight")
