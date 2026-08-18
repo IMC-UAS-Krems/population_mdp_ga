@@ -1,0 +1,21 @@
+{
+  "config": {
+    "n": 4,
+    "mu": 3,
+    "generations": 30,
+    "runs": 50000,
+    "tournament_k": 2,
+    "crossover_rate": 0.0,
+    "mutation_rate": null,
+    "problem": "jump",
+    "jump_k": 2,
+    "trap_k": 2,
+    "seed": 20260817,
+    "output_prefix": "ga_mdp_jump_mutation_only",
+    "effective_mutation_rate": 0.25
+  },
+  "number_of_exact_states": 816,
+  "transition_nonzeros": 17304,
+  "rmse_mc_vs_theory": 0.004658324959718229,
+  "max_absolute_error_mc_vs_theory": 0.007038689649325303
+}

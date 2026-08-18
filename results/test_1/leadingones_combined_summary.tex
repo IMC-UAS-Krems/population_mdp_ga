@@ -1,0 +1,13 @@
+\begin{table*}[t]
+    \centering
+    \caption{Summary of the comparison between exact population-MDP predictions and independently simulated genetic algorithm trajectories. Coverage is the percentage of generations for which the theoretical expected best fitness lies within the pointwise Monte Carlo $95\%$ confidence interval.}
+    \label{tab:combined-ga-trajectory-summary}
+    \begin{tabular}{lrrrrrr}
+        \hline
+        \textbf{Configuration} & \textbf{$T$} & \textbf{Theory final} & \textbf{MC final} & \textbf{RMSE} & \textbf{MAE} & \textbf{Coverage (\%)} \\
+        \hline
+        Mutation only ($p_c=0$) & 30 & 3.9201 & 3.9192 & 0.0038 & 0.0031 & 96.8 \\
+        Crossover ($p_c=0.9$) & 30 & 3.9233 & 3.9216 & 0.0027 & 0.0019 & 100.0 \\
+        \hline
+    \end{tabular}
+\end{table*}

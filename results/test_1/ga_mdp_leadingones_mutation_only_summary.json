@@ -1,0 +1,21 @@
+{
+  "config": {
+    "n": 4,
+    "mu": 3,
+    "generations": 30,
+    "runs": 50000,
+    "tournament_k": 2,
+    "crossover_rate": 0.0,
+    "mutation_rate": null,
+    "problem": "leadingones",
+    "jump_k": 2,
+    "trap_k": 2,
+    "seed": 20260817,
+    "output_prefix": "ga_mdp_leadingones_mutation_only",
+    "effective_mutation_rate": 0.25
+  },
+  "number_of_exact_states": 816,
+  "transition_nonzeros": 18207,
+  "rmse_mc_vs_theory": 0.003777793752996186,
+  "max_absolute_error_mc_vs_theory": 0.008893464059246625
+}
