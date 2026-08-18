@@ -1,0 +1,39 @@
+{
+  "config": {
+    "problem": "onemax",
+    "n": 20,
+    "mu": 16,
+    "generations": 100,
+    "train_runs": 10000,
+    "validation_runs": 2000,
+    "test_runs": 10000,
+    "tournament_k": 2,
+    "crossover_rate": 0.9,
+    "mutation_rate": null,
+    "jump_k": 4,
+    "trap_k": 4,
+    "seed": 20260818,
+    "candidate_bins": [
+      3,
+      4,
+      5
+    ],
+    "candidate_windows": [
+      0,
+      10,
+      20
+    ],
+    "allele_hist_bins": 5,
+    "fitness_depth": 3,
+    "min_transition_count": 1,
+    "output_prefix": "rich_onemax",
+    "effective_mutation_rate": 0.05
+  },
+  "selected": {
+    "bins": 5,
+    "window": 0,
+    "validation_score": 0.01011594978642152,
+    "aggregate_states": 375405,
+    "test_initial_unseen_rate": 0.3101
+  }
+}
