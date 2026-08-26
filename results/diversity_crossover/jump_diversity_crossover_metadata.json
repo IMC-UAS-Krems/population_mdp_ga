@@ -1,0 +1,41 @@
+{
+  "config": {
+    "problem": "jump",
+    "n": 20,
+    "mu": 16,
+    "jump_k": 4,
+    "trap_k": 4,
+    "tournament_k": 2,
+    "crossover_rate": 0.9,
+    "mutation_rate": null,
+    "candidate_populations": 20000,
+    "matched_pairs": 100,
+    "rollouts": 1000,
+    "horizons": [
+      25,
+      50,
+      100
+    ],
+    "mean_fitness_bin_width": 0.25,
+    "variance_bin_width": 0.25,
+    "minimum_diversity_gap": 0.1,
+    "minimum_group_size": 2,
+    "seed": 20260820,
+    "bootstrap_samples": 2000,
+    "output_prefix": "jump_diversity_crossover",
+    "effective_mutation_rate": 0.05
+  },
+  "matched_pairs_found": 100,
+  "matching_definition": {
+    "exact": [
+      "best_fitness",
+      "best_count"
+    ],
+    "binned": {
+      "mean_fitness_width": 0.25,
+      "fitness_variance_width": 0.25
+    },
+    "minimum_diversity_gap": 0.1
+  },
+  "interaction_definition": "[V_cross(P_high)-V_mut(P_high)] - [V_cross(P_low)-V_mut(P_low)]"
+}
